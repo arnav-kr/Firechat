@@ -1,0 +1,138 @@
+:root {
+    --header-height: 80px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+body {
+    position: absolute;
+    min-height: 100%;
+    background: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+
+.background_image {
+    width: 100vw;
+    height: 200vh;
+    background-image: url("assets/bg_image.jpg");
+    background-position: 50% 0%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+/* |------ HEADER ------| */
+header {
+    height: var(--header-height);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+header nav {
+    height: 100%;
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+header nav .logo img {
+    width: 30px;
+    height: 30px;
+}
+header nav .logo h1 {
+    font-size: 2.1vw;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0 0 0 10px;
+}
+
+header nav ul {
+    width: 34%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul li {
+    font-size: 1.9vw;
+    font-weight: 500;
+}
+
+header nav a.open {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(170, 200, 255, 0.534);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+
+
+
+/* |------ HOME ------ */
+section.home {
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+    overflow: hidden;
+}
+
+.home .title {
+    margin: 60px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home .title h2 {
+    height: 1em;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home .title .action {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.8s;
+    line-height: 0;
+}
+.home .title .action span {
+    text-align: right;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s;
+} 
+.home .title .action span:nth-child(1){
+    opacity: 1;
+}
+
+
+.home .title p {
+    margin: 10px 0 0 0;
+    font-size: 1.9vw;
+}
+
+
