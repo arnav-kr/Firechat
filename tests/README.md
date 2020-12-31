@@ -1,6 +1,8 @@
 ## Syntax:
 ```html
-<nav-menu items="p" event-listeners="" toggle-button="" enableLinks="" links=""></nav-menu>
+<button id="myButton">Toggle Menu</button>
+
+<nav-menu items="profile,settings,about" event-listeners="alert('profile'),alert('settings'),alert('about')" toggle-button="myButton" enableLinks="true" links="#profile,/settings,https://example.com/about/"></nav-menu>
 ```
 |properties|value|Use
 |-----|----|----|
