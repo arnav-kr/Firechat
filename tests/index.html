@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Menu Element Test</title>
+</head>
+<body>
+        <button id="toggler">Toggle Menu</button>
+        <nav-menu items="My profile,Notifications,Settings,Sync App" event-listeners="alert('My Profile'),alert('Notifications'),alert('Settings'),alert('Sync App')" id="c" toggle-button="toggler"></nav-menu>
+        <script>document.getElementById("c").open()</script>
+</body>
+</html>
