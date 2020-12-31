@@ -18,7 +18,7 @@ body {
 .background_image {
     width: 100vw;
     height: 200vh;
-    background-image: url("assets/bg_image.jpg");
+    background-image: url("../images/bg_image.jpg");
     background-position: 50% 0%;
     background-size: cover;
     position: absolute;
