@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --header-height: 90px;
+}
+/* |------ HEADER ------| */
+header {
+    height: var(--header-height);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+header nav {
+    height: 100%;
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+header nav .logo img {
+    width: 30px;
+    height: 30px;
+}
+header nav .logo h1 {
+    font-size: 2.4vw;
+    letter-spacing: -1px;
+    margin: 0 0 0 10px;
+    color: rgb(255, 157, 77);
+    font-family: Montserrat;
+}
+
+header nav ul {
+    width: 28%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul li {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+header nav ul li a {
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+header nav ul li:hover a {
+    color: rgb(119, 255, 137);
+}
+
+header nav a.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.5vw;
+    transition: color 0.3s;
+}
+header nav a.open:hover {
+    color: rgb(119, 255, 137);
+}
+
+
+/* !------- Hamburger menu -------| */
+header .hamburger {
+    position: relative;
+    margin-right: 20px;
+    width: 30px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+header .hamburger span {
+    background: #FFF;
+    width: 100%;
+    height: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+    position: absolute;
+}
+
+
+
+header .hamburger span:nth-child(1){
+    transform: translate(0, -500%);
+}
+header .hamburger span:nth-child(2){
+    transform: translate(0, 0);
+}
+header .hamburger span:nth-child(3){
+    transform: translate(0, 500%);
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:544px){
+    header nav ul {
+        background-color: rgb(10, 10, 10);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        /* height: 100%; */
+        margin-right: 0;
+        height: 100vh;
+        transform: translate(100%, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    header nav ul li {
+        list-style-type: none;
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 6vw;
+        font-weight: 500;
+    }
+
+    header .hamburger {
+        display: flex;
+    }
+
+
+    #hamburger_open span:nth-child(1){
+        transform: rotate(-45deg);
+    }
+    #hamburger_open span:nth-child(2){
+        transform: translate(100%, 0);
+        opacity: 0;
+    }
+    #hamburger_open span:nth-child(3){
+        transform: rotate(45deg);
+    }
+    
+
+    .ul_open {
+        transform: translate(0, 0);
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
     <link rel="stylesheet" href="res/stylesheets/home.css">
+    <link rel="stylesheet" href="res/stylesheets/navbar.css">
     <title>Global Web Chat</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <h1>Firechat</h1>
             </a>
         
-            <ul>
+            <ul id="ul">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -31,6 +32,12 @@
             <a href="#" class="open" id="state">
                 Sign up
             </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -56,5 +63,6 @@
     </section>
 
     <script src="res/scripts/home.js"></script>
+    <script src="res/scripts/navbar.js"></script>
 </body>
 </html>
