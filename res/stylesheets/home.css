@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    --header-height: 80px;
+    --header-height: 90px;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: Arial, 'Franklin Gothic Medium', sans-serif;
 }
 
 body {
@@ -13,15 +14,18 @@ body {
     min-height: 100%;
     background: rgb(255, 255, 255);
     overflow-y: hidden;
+    color: white;
 }
 
-.background_image {
+.background {
     width: 100vw;
-    height: 200vh;
-    background-image: url("../images/bg_image.jpg");
+    height: 100vh;
+    background-image: url("../images/night_sky.jpg");
     background-position: 50% 0%;
     background-size: cover;
+    filter: brightness(50%);
     position: absolute;
+    background-color: rgb(15, 15, 15);
     top: 0;
     left: 0;
     z-index: -100;
@@ -57,14 +61,15 @@ header nav .logo img {
     height: 30px;
 }
 header nav .logo h1 {
-    font-size: 2.1vw;
-    font-weight: 600;
+    font-size: 2.4vw;
     letter-spacing: -1px;
     margin: 0 0 0 10px;
+    color: rgb(255, 157, 77);
+    font-family: Montserrat;
 }
 
 header nav ul {
-    width: 34%;
+    width: 28%;
     height: 100%;
     list-style-type: none;
     display: flex;
@@ -73,21 +78,30 @@ header nav ul {
     justify-content: space-between;
 }
 header nav ul li {
-    font-size: 1.9vw;
+    font-size: 1.5vw;
     font-weight: 500;
+}
+header nav ul li a {
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+header nav ul li:hover a {
+    color: rgb(119, 255, 137);
 }
 
 header nav a.open {
-    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(170, 200, 255, 0.534);
-    border-radius: 20px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
+    transition: color 0.3s;
+}
+header nav a.open:hover {
+    color: rgb(119, 255, 137);
 }
 
 
@@ -97,10 +111,11 @@ section.home {
     width: 100vw;
     height: calc(100vh - var(--header-height));
     overflow: hidden;
+    padding: 0 0 0 24px;
 }
 
 .home .title {
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,10 +123,11 @@ section.home {
 }
 .home .title h2 {
     height: 1em;
-    font-size: 3vw;
+    font-size: 2.9vw;
     display: flex;
     flex-direction: row;
     align-items: center;
+    word-spacing: 6px;
 }
 .home .title .action {
     display: flex;
@@ -124,15 +140,31 @@ section.home {
     width: 100%;
     opacity: 0;
     transition: opacity 0.4s;
-} 
+    color: rgb(255, 157, 77);
+}
+
 .home .title .action span:nth-child(1){
     opacity: 1;
 }
 
 
-.home .title p {
-    margin: 10px 0 0 0;
-    font-size: 1.9vw;
+.home .featuresPreview {
+    margin: 30px auto auto auto;
+    max-width: 70ch;
+    font-family: arial;
+    text-align: center;
 }
-
-
+.home .featuresPreview p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 100;
+    line-height: 1.4;
+}
+.home .featuresPreview a {
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}
