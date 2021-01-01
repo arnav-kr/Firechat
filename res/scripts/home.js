@@ -1,7 +1,4 @@
 
-// Changes the width of body to accurate width of viewport, some browsers include the scrollbar in 100vw
-var container =  document.getElementById("container");
-container.style.width = document.body.clientWidth+"px";
 
 
 // The below code is for the animation in home page, text changing  
