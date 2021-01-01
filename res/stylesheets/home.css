@@ -111,7 +111,6 @@ section.home {
     width: 100vw;
     height: calc(100vh - var(--header-height));
     overflow: hidden;
-    padding: 0 0 0 24px;
 }
 
 .home .title {
@@ -149,22 +148,28 @@ section.home {
 
 
 .home .featuresPreview {
-    margin: 30px auto auto auto;
-    max-width: 70ch;
+    margin-top: 30px;
+    width: 100%;
     font-family: arial;
     text-align: center;
 }
 .home .featuresPreview p {
     text-align: center;
-    width: 100%;
+    max-width: 60ch;
     font-size: 1.5vw;
     font-weight: 100;
     line-height: 1.4;
+    margin: 0 auto 30px auto;
 }
 .home .featuresPreview a {
-    padding: 10px 20px;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     color: white;
     text-decoration: none;
-    margin-top: 30px;
+    padding: 14px 20px;
+    background-color: rgb(30, 172, 85);
+    border-radius: 10px;
+}
+
+.home .featuresPreview a:hover .line {
+    transform: scale(1.2);
 }
