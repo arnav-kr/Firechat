@@ -1,0 +1,44 @@
+:root{
+    
+}
+
+
+
+
+
+/*Main Message*/
+.chat_message{
+
+}
+/*Message Contents*/
+.chat_message .chat_message_contents{
+
+}
+/*Profile Picture*/
+.chat_message .chat_message_contents img{
+
+}
+/*Message Header*/
+.chat_message .chat_message_contents .chat-message_header{
+
+}
+/*Message Header Text*/
+.chat_message .chat_message_contents .chat-message_header .chat_message_headerText{
+
+}
+/*Message Username*/
+.chat_message .chat_message_contents .chat-message_header .chat_message_headerText .chat_message_username{
+
+}
+/*Message Timestamp*/
+.chat_message .chat_message_contents .chat-message_header .chat_message_timestamp{
+
+}
+/*Message Actual Timestamp*/
+.chat_message .chat_message_contents .chat-message_header .chat_message_timestamp span{
+
+}
+/*Message Content*/
+.chat_message .chat_message_contents .chat_message_content{
+
+}
