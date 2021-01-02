@@ -9,7 +9,10 @@ function hamburgerToggle(){
     
     if(hamburger.id == "hamburger_open"){
         hamburger.id = "";
+        document.body.classList.remove("body_overflow_hidden")
     }else{
         hamburger.id = "hamburger_open";
+        document.body.scrollTo(0, 0)
+        document.body.classList.add("body_overflow_hidden")
     }
 }
