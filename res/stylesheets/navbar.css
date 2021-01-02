@@ -224,7 +224,8 @@ header .hamburger span:nth-child(3){
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
+        padding-top: var(--header-height);
     }
     
     header nav ul li {
@@ -235,6 +236,7 @@ header .hamburger span:nth-child(3){
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10px 0;
     }
 
     header nav ul li a {

@@ -12,7 +12,7 @@ function hamburgerToggle(){
         document.body.classList.remove("body_overflow_hidden")
     }else{
         hamburger.id = "hamburger_open";
-        document.body.scrollTo(0, 0)
+        window.scrollTo({ top: 0, behavior: 'smooth' })
         document.body.classList.add("body_overflow_hidden")
     }
 }
