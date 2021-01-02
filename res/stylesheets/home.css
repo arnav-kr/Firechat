@@ -9,9 +9,26 @@
     scroll-behavior: smooth 1s;
 }
 
+
+/*Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#666666;
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-corner{
+    background-color: transparent;
+}
+::-webkit-scrollbar-track{
+    background-clip: padding-box;
+    background-color: rgb(0, 0, 0);
+}
+
 body {
     position: absolute;
-    background: rgb(255, 255, 255);
     width: 100%;
     color: white;
     overflow-x: hidden;
@@ -26,13 +43,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 200%;
     background-image: url("../images/night_sky.jpg");
     background-size: cover;
     background-position: 50% 100%;
     filter: brightness(50%);
-    z-index: -10;
+    z-index: 10;
 }
 
 
