@@ -233,7 +233,7 @@ header .hamburger span:nth-child(3){
     }
     header nav ul {
         background-color: rgb(10, 10, 10);
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         width: 100%;
