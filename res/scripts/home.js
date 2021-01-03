@@ -1,7 +1,4 @@
 
-
-
-
 // The below code is for the animation in home page, text changing  
 var actionDOM = document.getElementById("action");
 var index = 1;
