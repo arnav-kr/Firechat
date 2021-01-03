@@ -187,6 +187,19 @@ section.home {
     
 }
 
+@media screen and (max-width:544px){
+    .home .title {
+        margin: 40px 0 0 0;
+    }
+    .home .title h2 {
+        font-size: 5.7vw;
+    }
+    .home .featuresPreview p {
+        max-width: 80vw;
+        font-size: 3.5vw;
+        line-height: 1.2;
+    }
+}
 
 @media screen and (max-width:415px){
     .home .title {
@@ -199,6 +212,5 @@ section.home {
         max-width: 80vw;
         font-size: 4.3vw;
         line-height: 1.2;
-        margin: -0.4em auto 40px auto;
     }
 }
