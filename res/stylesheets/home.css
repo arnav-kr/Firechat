@@ -1,5 +1,6 @@
 :root {
     --header-height: 90px;
+    --home-max-height: 500px;
 }
 * {
     margin: 0;
@@ -48,11 +49,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200%;
+    height: 100vh;
+    max-height: calc(var(--home-max-height) + var(--header-height));
     background-image: url("../images/night_sky.jpg");
     background-size: cover;
     background-position: 50% 100%;
-    filter: brightness(50%);
+    filter: brightness(25%);
     z-index: -10;
 }
 
@@ -63,6 +65,7 @@ section.home {
     width: 100%;
     height: calc(100vh - var(--header-height));
     overflow: hidden;
+    max-height: var(--home-max-height);
 }
 
 .home .title {
@@ -74,11 +77,10 @@ section.home {
 }
 .home .title h2 {
     height: 1em;
-    font-size: 2.9vw;
+    font-size: 3.1vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    word-spacing: 6px;
 }
 .home .title .action {
     display: flex;
@@ -108,34 +110,37 @@ section.home {
 .home .featuresPreview p {
     text-align: center;
     max-width: 60ch;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     line-height: 1.4;
     margin: 0 auto 30px auto;
 }
 .home .featuresPreview a {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     color: white;
     text-decoration: none;
     background-color:  rgb(30, 172, 85);
-    padding: 10px 15px;
+    padding: 10px 12px;
     border-radius: 7px;
     font-weight: 400;
+
 }
 .home .featuresPreview a:hover {
     transform: scale(1.2);
 }
 
-.home .featuresPreview a:hover .line {
-    transform: scale(1.2);
-}
+
+
+
+
+/* Media Responsiveness */
 
 @media screen and (max-width:1024px){
 
     .home .title {
-        margin: 65px 0 0 0;
+        margin: 60px 0 0 0;
     }
     .home .title h2 {
-        font-size: 3.7vw;
+        font-size: 4vw;
     }
 
     .home .featuresPreview {
@@ -143,21 +148,56 @@ section.home {
     }
     .home .featuresPreview p {
         max-width: 50ch;
-        font-size: 1.7vw;
-        line-height: 1.5;
+        font-size: 1.9vw;
+        line-height: 1.4;
         margin: 0 auto 40px auto;
     }
     .home .featuresPreview a {
-        font-size: 1.7vw;
-        color: white;
-        text-decoration: none;
-        padding: 14px 20px;
-        background-color: rgb(30, 172, 85);
-        border-radius: 10px;
+        font-size: 2.3vw;
+        font-weight: 400;
     }
 
-    .home .featuresPreview a:hover .line {
-        transform: scale(1.2);
-    }
+
     
+}
+
+
+@media screen and (max-width:762px){
+
+    .home .title {
+        margin: 45px 0 0 0;
+    }
+    .home .title h2 {
+        font-size: 4.7vw;
+    }
+
+    .home .featuresPreview {
+        margin-top: 17px;
+    }
+    .home .featuresPreview p {
+        max-width: 80vw;
+        font-size: 4.3vw;
+    }
+    .home .featuresPreview a {
+        font-size: 2.7vw;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width:544px){
+    .home .title {
+        margin: 30px 0 0 0;
+    }
+    .home .title h2 {
+        font-size: 6.6vw;
+    }
+    .home .featuresPreview p {
+        max-width: 80vw;
+        font-size: 4.3vw;
+        line-height: 1.2;
+        margin: -0.4em auto 40px auto;
+    }
 }
